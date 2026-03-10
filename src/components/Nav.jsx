@@ -45,8 +45,8 @@ const Nav = () => {
         </ul>
         <div
           style={{
+            backgroundColor:"red",
             display: "flex",
-
             justifyContent: "space-evenly",
             alignItems: "center",
             gap: "10px",
@@ -54,6 +54,7 @@ const Nav = () => {
         >
           <ul
             style={{
+        backgroundColor:"greenyellow",
               display: "flex",
               listStyleType: "none",
               justifyContent: "space-evenly",
@@ -65,6 +66,8 @@ const Nav = () => {
             <li>Developers</li>
             <li>Support</li>
             <li>Login</li>
+            </ul>
+
             <button
               style={{
                 backgroundColor: "var(--button-color)",
@@ -77,13 +80,14 @@ const Nav = () => {
             >
               Create free account
             </button>
-          </ul>
+          
           <img style={{ height: "30px" }} src={flag} alt="" />
         </div>
       </div>
     </div>
   );
 };
-5467;
+
 
 export default Nav;
+
