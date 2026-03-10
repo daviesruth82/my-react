@@ -26,26 +26,35 @@ const Nav = () => {
           fontWeight: "bold",
         }}
       >
-        <ul
+        <div
           style={{
             display: "flex",
-            listStyleType: "none",
             justifyContent: "space-evenly",
             alignItems: "center",
             gap: "10px",
-            fontWeight: "bold",
           }}
         >
           <img style={{ height: "40px" }} src={paystack} alt="" />
 
-          <li>Why paystack</li>
-          <li>Customers</li>
-          <li>Pricing</li>
-          <li>Learn</li>
-        </ul>
+          <ul
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              listStyleType: "none",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              gap: "10px",
+              fontWeight: "bold",
+            }}
+          >
+            <li>Why paystack</li>
+            <li>Customers</li>
+            <li>Pricing</li>
+            <li>Learn</li>
+          </ul>
+        </div>
         <div
           style={{
-            backgroundColor:"red",
             display: "flex",
             justifyContent: "space-evenly",
             alignItems: "center",
@@ -54,20 +63,18 @@ const Nav = () => {
         >
           <ul
             style={{
-        backgroundColor:"greenyellow",
               display: "flex",
+              flexDirection: "row",
               listStyleType: "none",
               justifyContent: "space-evenly",
               alignItems: "center",
               gap: "10px",
-              color: "#0d263c",
+              fontWeight: "bold",
             }}
           >
             <li>Developers</li>
             <li>Support</li>
             <li>Login</li>
-            </ul>
-
             <button
               style={{
                 backgroundColor: "var(--button-color)",
@@ -80,14 +87,13 @@ const Nav = () => {
             >
               Create free account
             </button>
-          
+          </ul>
           <img style={{ height: "30px" }} src={flag} alt="" />
         </div>
       </div>
     </div>
   );
 };
-
+5467;
 
 export default Nav;
-
