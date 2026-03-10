@@ -2,98 +2,37 @@ import React from "react";
 import Paystack from "./Paystack";
 import paystack from "../assets/paystack.svg";
 import flag from "../assets/flag.svg";
+import "./Nav.css";
 
 const Nav = () => {
   return (
-    <div
-      className="header_container"
-      style={{
-        width: "100%",
-        height: "10%",
-        // backgroundColor: "white",
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
-      <div
-        className="nav"
-        style={{
-          // backgroundColor: "pink",
-          width: "90%",
-          height: "100%",
-          display: "flex",
-          justifyContent: "space-between",
-          fontWeight: "bold",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-            gap: "10px",
-          }}
-        >
+    <div className="header_container">
+      <div className="nav">
+        <div className="navright">
           <img style={{ height: "40px" }} src={paystack} alt="" />
 
-          <ul
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              listStyleType: "none",
-              justifyContent: "space-evenly",
-              alignItems: "center",
-              gap: "10px",
-              fontWeight: "bold",
-            }}
-          >
-            <li>Why paystack</li>
+          <ul className="list1">
+            <li> Why paystack</li>
             <li>Customers</li>
             <li>Pricing</li>
             <li>Learn</li>
           </ul>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-            gap: "10px",
-          }}
-        >
-          <ul
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              listStyleType: "none",
-              justifyContent: "space-evenly",
-              alignItems: "center",
-              gap: "10px",
-              fontWeight: "bold",
-            }}
-          >
+        <div className="navleft">
+          <ul className="list2">
             <li>Developers</li>
             <li>Support</li>
             <li>Login</li>
-            <button
-              style={{
-                backgroundColor: "var(--button-color)",
-                color: "whitesmoke",
-                fontSize: "18px",
-                width: "180px",
-                height: "30px",
-                borderRadius: "5px",
-              }}
-            >
-              Create free account
-            </button>
           </ul>
-          <img style={{ height: "30px" }} src={flag} alt="" />
+          <div className="btn_con">
+            <button>Create free account</button>
+            <img style={{ height: "30px" }} src={flag} alt="" />
+          </div>
         </div>
       </div>
     </div>
   );
 };
-5467;
+
 
 export default Nav;
